@@ -82,6 +82,41 @@ h1, h2, h3 { font-family: 'Noto Serif JP', serif; font-weight: 500; line-height:
   padding: 140px 0 120px;
   background: linear-gradient(180deg, #FAF7F2 0%, #F2EEE6 100%);
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero::before,
+.hero::after {
+  position: absolute;
+  font-family: 'Noto Serif JP', Georgia, serif;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(168, 155, 201, .14);
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+.hero::before {
+  content: "FUJIRINGOSHA";
+  left: 50%;
+  top: 18%;
+  transform: translateX(-50%);
+  font-size: clamp(56px, 13vw, 172px);
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.hero::after {
+  content: "FR";
+  right: -1vw;
+  bottom: -36px;
+  font-size: clamp(120px, 24vw, 320px);
+  letter-spacing: -.02em;
+  color: rgba(43, 43, 43, .055);
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 .hero-copy {
   font-size: clamp(28px, 4vw, 44px);
@@ -450,6 +485,16 @@ h1, h2, h3 { font-family: 'Noto Serif JP', serif; font-weight: 500; line-height:
 @media (max-width: 767px) {
   .section { padding: 60px 0; }
   .hero { padding: 80px 0 70px; }
+  .hero::before {
+    top: 16%;
+    font-size: 54px;
+    letter-spacing: .02em;
+  }
+  .hero::after {
+    right: -18px;
+    bottom: -18px;
+    font-size: 132px;
+  }
   .logo { gap: 10px; }
   .logo img { height: 34px; }
   .logo-name { font-size: 12px; letter-spacing: .04em; }
