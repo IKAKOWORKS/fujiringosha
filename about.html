@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>私たちについて | 藤林檎舎</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="https://fujiringosha.ikakoworks.com/logo_FUJIRINGOSHA.png" alt="藤林檎舎"></a>
+    <nav class="global-nav">
+      <ul>
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="contact.html" class="nav-cta">お問合せ</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero-en">About</p>
+      <h1>私たちについて</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2 class="block-title">Mission</h2>
+      <p class="big-copy">小さなこだわりに、ちゃんとした形を。</p>
+      <p>
+        私たち藤林檎舎は、デザインとテクノロジーの力で、個人事業主や小規模事業者の"想い"を世の中に届けるお手伝いをしています。大きな広告予算をかけられなくても、丁寧に作られたモノやサービスには、必ずそれを必要としている人がいる。私たちは、その出会いを生み出すための「見え方」と「仕組み」を整えることを使命としています。
+      </p>
+    </div>
+  </section>
+
+  <section class="section bg-soft">
+    <div class="container narrow">
+      <h2 class="block-title">社会貢献への姿勢</h2>
+      <p>
+        地域の小さな事業者や個人クリエイターが、適正な価格でクオリティの高いクリエイティブにアクセスできる社会を目指します。また、デジタル化に踏み出せずにいる事業者の方々への伴走支援を通じて、持続可能な事業運営をサポートしてまいります。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2 class="block-title">会社概要</h2>
+      <table class="company-table">
+        <tr><th>商号</th><td>藤林檎舎（ふじりんごしゃ）</td></tr>
+        <tr><th>事業内容</th><td>Web・デジタル制作／ブランディング・デザイン／EC運営サポート／インテリア・プロダクト企画／特殊調査</td></tr>
+        <tr><th>所在地</th><td>― </td></tr>
+        <tr><th>対応エリア</th><td>全国（オンライン対応）</td></tr>
+        <tr><th>取引銀行</th><td>―</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="section bg-soft">
+    <div class="container narrow">
+      <h2 class="block-title">沿革</h2>
+      <dl class="history">
+        <div><dt>創業</dt><dd>姉妹による「会社ごっこ」として、藤山探偵事務所を擁する「りんご株式会社」が誕生。</dd></div>
+        <div><dt>その後</dt><dd>姉はインテリアECの世界へ、妹はWebデザイン・システム開発の世界へ、それぞれの道を歩む。</dd></div>
+        <div><dt>現在</dt><dd>幼き日の屋号を「藤林檎舎」と改め、それぞれの専門性を持ち寄り、現在の事業を展開。</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <h2>お仕事のご相談はこちらから</h2>
+      <a href="contact.html" class="btn-primary">お問合せはこちら</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="https://fujiringosha.ikakoworks.com/logo_FUJIRINGOSHA.png" alt="藤林檎舎" class="footer-logo">
+      <p class="footer-tagline">デザインとテクノロジーで、<br>小さなこだわりを形にする。</p>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="copyright">© 藤林檎舎 Fujiringosha</p>
+</footer>
+
+<script>
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.global-nav').classList.toggle('open');
+    this.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

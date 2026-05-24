@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>お問合せ | 藤林檎舎</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="https://fujiringosha.ikakoworks.com/logo_FUJIRINGOSHA.png" alt="藤林檎舎"></a>
+    <nav class="global-nav">
+      <ul>
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="contact.html" class="nav-cta">お問合せ</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero-en">Contact</p>
+      <h1>お問合せ</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <p>お仕事のご依頼・ご相談・お見積もり、その他お問合せは下記フォームよりお気軽にお寄せください。<br>通常2〜3営業日以内にご返信いたします。</p>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('お問合せありがとうございます。\n（このフォームはデモのため送信されません）');">
+        <div class="form-row">
+          <label for="name">お名前 <span class="required">必須</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="company">会社名・屋号</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-row">
+          <label for="email">メールアドレス <span class="required">必須</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="tel">
+        </div>
+        <div class="form-row">
+          <label for="category">ご依頼内容 <span class="required">必須</span></label>
+          <select id="category" name="category" required>
+            <option value="">選択してください</option>
+            <option>Web・デジタル制作</option>
+            <option>ブランディング・デザイン</option>
+            <option>EC運営サポート</option>
+            <option>インテリア・プロダクト企画</option>
+            <option>特殊調査部門（藤山探偵事務所）</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">ご相談内容 <span class="required">必須</span></label>
+          <textarea id="message" name="message" rows="8" required></textarea>
+        </div>
+        <div class="form-row check-row">
+          <label><input type="checkbox" required> <a href="privacy.html">プライバシーポリシー</a>に同意する</label>
+        </div>
+        <div class="form-row submit-row">
+          <button type="submit" class="btn-primary">送信する</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="https://fujiringosha.ikakoworks.com/logo_FUJIRINGOSHA.png" alt="藤林檎舎" class="footer-logo">
+      <p class="footer-tagline">デザインとテクノロジーで、<br>小さなこだわりを形にする。</p>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="copyright">© 藤林檎舎 Fujiringosha</p>
+</footer>
+
+<script>
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.global-nav').classList.toggle('open');
+    this.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

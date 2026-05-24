@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>藤林檎舎 | デザインとテクノロジーで、小さなこだわりを形にする。</title>
+<meta name="description" content="藤林檎舎は、Web制作・ブランディング・EC運営サポート・プロダクト企画を手がけるクリエイティブカンパニーです。">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="https://fujiringosha.ikakoworks.com/logo_FUJIRINGOSHA.png" alt="藤林檎舎">
+    </a>
+    <nav class="global-nav">
+      <ul>
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="contact.html" class="nav-cta">お問合せ</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-copy">
+        デザインとテクノロジーで、<br>
+        小さなこだわりを形にする。
+      </h1>
+      <p class="hero-sub">藤林檎舎は、丁寧なものづくりを続ける事業者のための、クリエイティブカンパニーです。</p>
+    </div>
+  </section>
+
+  <section class="section about-intro">
+    <div class="container">
+      <p class="lead">
+        大きな広告予算がなくても、丁寧に作られたモノやサービスには、<br>
+        必ずそれを必要としている人がいる。<br>
+        私たちは、その出会いを生み出すための「見え方」と「仕組み」を整えます。
+      </p>
+      <a href="about.html" class="btn-line">私たちについて詳しく <span>→</span></a>
+    </div>
+  </section>
+
+  <section class="section service-list-section">
+    <div class="container">
+      <h2 class="section-title">事業内容<span>Service</span></h2>
+      <div class="service-grid">
+        <a href="service.html#web" class="service-card">
+          <span class="service-num">01</span>
+          <h3>Web・デジタル制作</h3>
+          <p>サイト制作、システム・アプリ開発まで対応。</p>
+        </a>
+        <a href="service.html#design" class="service-card">
+          <span class="service-num">02</span>
+          <h3>ブランディング・デザイン</h3>
+          <p>ロゴ、パッケージ、撮影、動画まで一貫制作。</p>
+        </a>
+        <a href="service.html#ec" class="service-card">
+          <span class="service-num">03</span>
+          <h3>EC運営サポート</h3>
+          <p>立ち上げから運用代行まで、売れる仕組みを構築。</p>
+        </a>
+        <a href="service.html#product" class="service-card">
+          <span class="service-num">04</span>
+          <h3>インテリア・プロダクト企画</h3>
+          <p>暮らしに小さな彩りを添えるプロダクトを企画。</p>
+        </a>
+        <a href="service.html#investigation" class="service-card special">
+          <span class="service-num">05</span>
+          <h3>特殊調査部門</h3>
+          <p>藤山探偵事務所 — 日常の小さな謎にお応えします。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <h2>ご相談・お見積もりはお気軽に</h2>
+      <p>小さなご相談から、長期のお取引まで。<br>まずはお話を聞かせてください。</p>
+      <a href="contact.html" class="btn-primary">お問合せはこちら</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <img src="https://fujiringosha.ikakoworks.com/logo_FUJIRINGOSHA.png" alt="藤林檎舎" class="footer-logo">
+      <p class="footer-tagline">デザインとテクノロジーで、<br>小さなこだわりを形にする。</p>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="contact.html">お問合せ</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="copyright">© 藤林檎舎 Fujiringosha</p>
+</footer>
+
+<script>
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.global-nav').classList.toggle('open');
+    this.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
