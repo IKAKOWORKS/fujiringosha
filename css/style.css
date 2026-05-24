@@ -36,7 +36,18 @@ h1, h2, h3 { font-family: 'Noto Serif JP', serif; font-weight: 500; line-height:
   align-items: center;
   padding: 18px 0;
 }
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
 .logo img { height: 42px; width: auto; }
+.logo-name {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
 .global-nav ul { display: flex; gap: 36px; align-items: center; }
 .global-nav a { font-size: 14px; letter-spacing: .05em; }
 .nav-cta {
@@ -182,6 +193,42 @@ h1, h2, h3 { font-family: 'Noto Serif JP', serif; font-weight: 500; line-height:
   border-color: #D9C9A8;
 }
 
+/* ========== Works ========== */
+.works-section { background: #FFFFFF; }
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.work-card {
+  overflow: hidden;
+  border: 1px solid #E8E2D6;
+  border-radius: 4px;
+  background: #FAF7F2;
+  box-shadow: 0 8px 22px rgba(0,0,0,.04);
+}
+.work-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform .35s;
+}
+.work-card:hover img { transform: scale(1.04); }
+.work-body {
+  padding: 18px 18px 20px;
+}
+.work-body h3 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+  letter-spacing: .08em;
+  margin-bottom: 8px;
+}
+.work-body p {
+  color: #6B6660;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 /* ========== Service Detail ========== */
 .service-num-large {
   font-family: 'Noto Serif JP', serif;
@@ -254,6 +301,19 @@ h1, h2, h3 { font-family: 'Noto Serif JP', serif; font-weight: 500; line-height:
 }
 .btn-line span { margin-left: 8px; transition: margin-left .3s; }
 .btn-line:hover span { margin-left: 16px; }
+
+.office-photo {
+  margin-top: 42px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #E8E2D6;
+  background: #FFFFFF;
+}
+.office-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
 
 .company-table {
   width: 100%;
@@ -390,6 +450,9 @@ h1, h2, h3 { font-family: 'Noto Serif JP', serif; font-weight: 500; line-height:
 @media (max-width: 767px) {
   .section { padding: 60px 0; }
   .hero { padding: 80px 0 70px; }
+  .logo { gap: 10px; }
+  .logo img { height: 34px; }
+  .logo-name { font-size: 12px; letter-spacing: .04em; }
   .hamburger { display: flex; }
   .global-nav {
     position: fixed;
@@ -409,6 +472,7 @@ h1, h2, h3 { font-family: 'Noto Serif JP', serif; font-weight: 500; line-height:
   }
   .nav-cta { display: inline-block; }
   .footer-inner { flex-direction: column; }
+  .works-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .history div { flex-direction: column; gap: 8px; }
   .history dt { flex: none; }
   .company-table th, .company-table td { display: block; width: 100%; }
